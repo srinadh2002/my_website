@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projects</title>
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <img src="svg-images/logo.svg" alt="">
+                <ul>
+                    <li><a href="portfolio.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="right">
+        <h1>My<span> Projects</span></h1>
+    </div>
+    <div class="container1">
+        <div class="row">
+            <div class="card">
+                <img src="website-images/pro_car.jpg" alt="">
+                <h2>Wifi Control Car</h2>
+                <p>Control and drive car using Wifi through mobile, Google Assistant.</p>
+            </div>
+            <div class="card">
+                <img src="website-images/plug.jpg" alt="">
+                <h2>Smart Plug</h2>
+                <p>Allows you to automate home appliances by a single tap on your mobile.</p>
+            </div>
+        </div>
+    </div>
+    <section class="desp">
+        <h1 class="heading"><span>Wifi </span>Control Car</h1>
+        <h2>Abstract</h2>
+        <p>A working prototype has been designed to
+            control a car Wirelessly using an Android Application. This is
+            done with the help of ESP8266 wifi module
+            Android application is used by the User to send data wirelessly
+            using Wifi. This data is an input to the
+            microcontroller system and the microcontroller uses it as the
+            controlling parameter to the underlying hardware.</p>
+        <h3>The Idea</h3>
+        <p class="idea">This is the main moto to made this project  smart car, we can also control the car using our android or gadgets using network like wifi. We can automate the Head lights with Google Assistant.
+        </p>
+        <h4>Key Features</h4>
+        <ul>
+            <li>Wifi Enabled</li>
+            <li>Control using mobile</li>
+            <li>Voice Assistant support</li>
+            <li>Control without the person presence</li>
+        </ul>
+        <h5>Components Used</h5>
+        <ul class="comp">
+            <li>TT Motors</li>
+            <li>65MM Wheels for TT Motors</li>
+            <li>VIPOW Batteries</li>
+            <li>Battery Socket</li>
+            <li>ESP8266</li>
+            <li>Motor Driver</li>
+            <li>Switch, Jumper Wires and Led's</li>
+        </ul>
+        <h6>Block Diagram</h6>
+        <img src="website-images/wifi-car.jpg",alt="">
+        <h6 class="prod">Procedure</h6>
+        <p class="prod-vi">First cut any kind of board in a preferred dimension and attach the TT Motors. Now connect 2 opposite sided motors in parallel and supply power through batteries. Now connect the motor wires with the motor driver, ESP8266 and also add headlights, backlights and screw all the components and wires. Now upload the code to the ESP8266 module and create a interface to conrol the car in the Blynk App.</p>
+        <h6 class="Conclus">Conclusion</h6>
+        <p class="con">This ideology can be used in automation
+            industries, real-time control systems
+            engineering, industrial purposes. The
+            whole prototype is applicable in both PC
+            as well as android mobile with a Wi-Fi
+            technology.</p>
+    </section>
+    <section class="smartplug">
+        <h1 class="heading"><span>Smart</span> Plug</h1>
+        <h2>Abstract</h2>
+        <p>The massive dissemination of smart devices in current markets provides innovative technologies that can be used in energy management systems. Particularly, smart plugs enable efficient remote monitoring and control capabilities of electrical resources at a low cost.</p>
+        <h3>The Idea</h3>
+        <p class="idea">We might sometime forget to on/off our Electrical appliances which consume lot of current and waste of time, sometimes it causes electric shocks. Sophisticated appliances are sensitive to voltage fluctuations.
+            Smart plug allow you to turn almost any wired appliances with an on/off switch in your home in to an automated one that can be controlled by a simple tap on your phone or voice command.
+            It also shows the power ranking which indicates the power consumption.
+            It acts like a stabilizer when there is high/low voltage of current, it automatically shutdowns.            
+        </p>
+        <h4>Key Features</h4>
+        <ul>
+            <li>Wifi Enabled</li>
+            <li>Create on/off schedules for your devices</li>
+            <li>Voice Assistant support</li>
+            <li>Control with mobile App</li>
+            <li>Prevent devices from overheating</li>
+        </ul>
+        <h5>Components Used</h5>
+        <ul class="comp">
+            <li>ESP8266</li>
+            <li>Relay</li>
+            <li>AC Socket</li>
+            <li>AC Plug</li>
+            <li>Switch, LED's</li>
+            <li>220v AC to 5v DC Converter</li>
+        </ul>
+        <h6>Block Diagram</h6>
+        <img src="website-images/smartplug.png",alt="">
+        <h6 class="prod">Procedure</h6>
+        <p class="prod-vi"> Initially, ESP8266 is connected to Relay module ,the AC power is supplied through AC plug to the relay, this AC power is converted into 5V DC and then supplied to ESP8266 module, the relay module is connected to the Current sensor and Voltage sensors to measure the current consumption and voltage supplied, the IN pin of relay module is connected to AC Socket and VCC pin is connected to power supply. The code is uploaded to the ESP8266 module and the setup this installation and required widgets in Blynk App. Now we can pulgin any Electrical appliances to this plug, we can on/off the power supply through anywhere and we can set timer for particular time to switch on/off, we can also 
+            Control using Google Assitant.
+            </p>
+        <h6 class="Conclus">Conclusion</h6>
+        <p class="con">Buying smart appliances is not possible for everyone, eventhough if we buy we can control it over a certain radius only, so we came across with this idea making Any Electrical Appliances smart with this small product, it is useful for anyone like aged and physically challenged people by making the control more reliable with hands-on experience.</p>
+    </section>
+
+    <footer>
+        <img class="footer-logo" src="svg-images/logo.svg" alt=""> 
+        <div class="footer-socials">
+            <a href="https://www.facebook.com/profile.php?id=100070239439659" target="_blank" class="icon">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/_.srinadh._/" target="_blank" class="icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/GuddantiSrinadh" target="_blank" class="icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/guddanti-srinadh-418717197/" target="_blank" class="icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <div class="copyright">
+            Copyright 2022 © Srinadh. All Rights Reserved.
+        </div>
+    </footer>
+</body>

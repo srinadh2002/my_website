@@ -1,0 +1,211 @@
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2 ;
+}
+header{
+    background-image: url(website-images/banner.jpg);
+    height: 700px;
+    clip-path: polygon(0 0,100% 0,100% 100%,70% 87%,0 100%);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    position:relative;
+    width:100%;
+    height: 100vh;
+}
+nav{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 20px;
+}
+nav ul li a{
+    font-size: 17px;
+    text-decoration: none;
+    color: var(--pure);
+
+}
+nav ul li a:hover{
+    color:#3DCFD3;
+}
+body{
+    height: 1000px;
+}
+
+.right{
+    position:relative;
+    color: #FFFFFF;
+    bottom: 530px;
+    left: 800px;
+    width:400px;
+}
+.right h1{
+    color: var(--primary);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+.right h2{
+    font-size: 3.0rem;
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+}
+.right h2 span{
+    color: var(--primary);
+}
+.right p{
+    line-height: 1.5;
+}
+section{
+    padding: 0rem 15rem;
+}
+.flex{
+    display: flex;
+}
+.items-center{
+    align-items: center;
+}
+.flex-1 img{
+    position: relative;
+    height: 300px;
+    width: 250px;
+    left: 160px;
+    bottom: 130px;
+}
+.flex-2{
+    position: relative;
+    left: 330px;
+    bottom: 130px;
+    width: 150px;
+}
+.flex-2 h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.flex-2 h1 span{
+    color:var(--primary);
+}
+.flex-2 h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+.flex-2 p{
+    width: 280px;
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    line-height: 1.5rem;
+}
+.interest{
+    position: relative;
+    bottom: 300px;
+}
+.heading{
+    position: relative;
+    color:#070606;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+    top: 90px;
+    font-size: 2.5rem;
+}
+.heading + p{
+    position: relative;
+    color: var(--ternary);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+    top: 100px;
+    font-size: 1.5rem;
+}
+section.interest{
+    background: var(--light);
+    height: 1000px;
+    position: relative;
+    bottom: 250px;
+}
+section.interest .card-wrapper{
+    position: relative;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+    top:90px;
+}
+section.interest .card-wrapper .card{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    transition: all .3s ease;
+}
+section.interest .card-wrapper .card img{
+    position: absolute;
+    top:-3.0rem;
+    left:50%;
+    transform: translateX(-50%);
+}
+section.interest .card-wrapper .card h2{
+    font-weight: lighter;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section.interest .card-wrapper .card p{
+    font-family: 'Lato', sans-serif;
+    color:var(--ternary);
+    line-height: 1.6;
+}
+section.interest .card-wrapper .card:hover{
+    background: var(--dark);
+}
+section.interest .card-wrapper .card:hover h2, section.interest .card-wrapper .card:hover p {
+    color: var(--pure);
+}
+footer{
+    position: relative;
+    text-align: center;
+    background: var(--dark);
+    bottom: 50px;
+    padding: 3rem 0;
+}
+footer .footer-logo{
+    margin-bottom: 0.5rem;
+}
+.footer-socials{
+    position: relative;
+    padding: 1rem 0;
+    bottom: 1px;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+}
+.icon{
+    color: #c4c4c4;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin-right: 8px;
+    transition: .3s;
+}
+.icon:hover{
+    color: var(--primary);
+}
+footer .copyright{
+    color: var(--ternary);
+}
+
